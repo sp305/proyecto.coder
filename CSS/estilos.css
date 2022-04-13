@@ -42,6 +42,11 @@
     
 }
 
+body {
+    background: rgb(223,223,223);
+    background: linear-gradient(90deg, rgba(223,223,223,1) 0%, rgba(255,255,255,0.985005753763606) 35%, rgba(129,129,129,1) 100%);
+}
+
 @keyframes mover {
     from {
         transform: translateX(100px);

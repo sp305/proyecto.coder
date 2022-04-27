@@ -1,0 +1,730 @@
+$one: #dfdfdf;
+$two: #e9e9e9;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(223,223,223);
+    background: linear-gradient(90deg, rgba(223,223,223,1) 0%, rgba(255,255,255,0.985005753763606) 35%, rgba(129,129,129,1) 100%);
+}
+
+/*NAVBAR*/
+#navbar {
+    background-color: $one;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/*Carrusel*/
+.carousel-inner {
+    max-height: 39rem;
+    min-height: 20rem;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 120px;
+    margin-bottom: 150px;
+    width: 90%;
+    margin-left: auto;
+}
+
+.card {
+    min-height:25rem;
+    max-height: 39rem;
+}
+
+#contacto {
+    background-color: $one;
+}
+
+.gallery__img{
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.gallery__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    height: 400px;
+    gap: 50px;
+    background-color: $one;
+    width: 80%;
+    box-shadow: 1px 7px 10px 0px rgb(108, 108, 108);
+        .gallery__subtitle {
+            color: #777777;
+            font-size: 50px;
+            font-weight: 400;
+        }
+        
+        .gallery__parrafo {
+            text-align: center;
+        }
+}
+
+
+/*Menu de alimentos*/
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: px;
+    grid-row-gap: 40px;
+    margin-top: 130px;
+    margin-bottom: 100px;
+    align-items: center;
+    align-content: center;
+}
+
+.menu__tipos{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: left;
+    align-content: center;
+    width: 300px;
+    height: 400px;
+    background-color: $one;
+    box-shadow: 1px 1px 10px 1px rgb(120, 120, 120);
+    &:hover{
+        background-color: $two;
+    }
+}
+
+.menu__tipos:hover{
+    background-color: $two;
+}
+
+.menu__subtitle {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25px;
+    color: #777777;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.menu__subtitle:hover{
+    transform: skew(-5deg);
+    -webkit-transform: skew(-5deg);
+    -moz-transform: skew(-5deg);
+    transition: all .4s ease-in-out;
+    color:#121212 ;
+}
+
+
+.menu__item{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.menu__items{
+    color: #777777;
+    font-size: 25px;
+    line-height: 30px;
+    transition: transform .4s ease-in-out;
+    cursor: pointer;
+}
+
+.menu__items:hover{
+    transform: translate(20px,0px);
+    -webkit-transform: translate(20px,0px);
+    -moz-transform: translate(20px,0px);
+    transition: transform .4s ease-in-out;
+    color: #121212;
+}
+
+
+
+
+/*BEBIDAS*/
+.bebidas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-row-gap: 0px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    align-items: center;
+    align-content: center;
+}
+
+.bebidas__tipos{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: left;
+    align-content: left;
+    width: 300px;
+    height: 400px;
+    background-color: $one;
+    box-shadow: 1px 1px 10px 1px rgb(120, 120, 120);
+}
+
+.bebidas__tipos:hover{
+    background-color: $two;
+}
+
+.bebida__subtitle {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25px;
+    color: #777777;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.bebida__subtitle:hover{
+    transform: skew(-5deg);
+    -webkit-transform: skew(-5deg);
+    -moz-transform: skew(-5deg);
+    transition: all .4s ease-in-out;
+    color:#121212 ;
+}
+
+
+.bebida__item{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.bebidas__items{
+    color: #777777;
+    font-size: 25px;
+    line-height: 30px;
+    transition: transform .4s ease-in-out;
+    cursor: pointer;
+}
+
+.bebidas__items:hover{
+    transform: translate(20px,0px);
+    -webkit-transform: translate(20px,0px);
+    -moz-transform: translate(20px,0px);
+    transition: transform .4s ease-in-out;
+    color: #121212;
+}
+
+#bebidas img{
+    max-height: 450px;
+    height: 90%;
+}
+
+/*Nosotros*/
+.sec__nos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    margin-bottom: 150px;
+}
+
+.nos__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    background-color: $two;
+    height: 350px;
+    margin: auto;
+}
+
+.nos__title{
+    font-size: 35px;
+    color: #777777;
+    margin-bottom: 10px;
+    background-color: $two;
+}
+
+.nos__parrafo {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.8rem;
+    width: 80%;
+    color: #777777;
+    height: 300px;
+}
+
+.nos__map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.div__map {
+    transition: all .4s ease-in-out;
+    margin-top: 40px;
+
+}
+
+.div__map:hover{
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+}
+
+.map {
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 1px rgb(120, 120, 120);
+}
+
+/*Formulario de contacto*/
+.formulario{
+    display: flex;
+    min-height: 100vh;
+    margin-top: 0px;
+    color: #000;
+}
+
+.form{
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0, 0, 0);
+    text-align: center;
+    border: 1px solid rgb(91, 91, 91);
+}
+
+.form__title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.form__container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form__group{
+    position: relative;
+    --color:#5757577e;
+}
+
+.form__input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form__input:not(:placeholder-shown){
+    color: #4d4646;
+}
+
+.form__textarea{
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    outline: none;
+    border: 1px solid var(--color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: $one;
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: $one;
+}
+
+.form__textarea:focus + .form__label,
+.form__textarea:not(:placeholder-shown) + .form__label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: $one;
+}
+
+.form__label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form__submit {
+    background: #aeaeae;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form__line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $one;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+
+}
+
+.form__input:focus ~ .form__line,
+.form__input:not(:placeholder-shown) ~ .form__line{
+    transform: scale(1);
+}
+
+
+
+
+/*Footer*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $one;
+    height: 120px;
+    text-decoration: none;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #777777;
+}
+
+.brand {
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+}
+
+.brand:hover, .brand-p:hover {
+    color: #121212;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+
+.icon{
+    font-size: 30px;
+    width: 40px;
+    color: #777777;
+    transition: all .4s ease-in-out;
+    border-radius: 50%;
+
+}
+
+.icon:hover{
+    color: #000000;
+}
+
+.text__footer__copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 10px;
+    color: #777777;
+}
+
+.copyright {
+    font-size: 20px;
+}
+
+.copyright:hover{
+    color: #121212;
+    transition: all .4s ease-in-out;
+
+}
+
+.created {
+    text-decoration: none;
+    color: #777777;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+
+}
+
+.created:hover {
+    transition: all .4s ease-in-out;
+    color: #121212;
+    transform: translate(1px,10px);
+    -webkit-transform: translate(1px,10px);
+    -moz-transform: translate(1px,10px);
+}
+
+#nosotros {
+    margin-top: 180px;
+    margin-bottom: 150px;
+}
+
+#nosotros h1 {
+    font-size: 25px;
+}
+
+@media (max-width: 850px){
+    .nav__title{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr); 
+        margin: auto;
+        margin-top: 150px;
+    }
+
+    .gallery__text {
+        align-items: center;
+    }
+
+    .gallery__subtitle {
+        font-size: 20px;
+    }
+
+    .gallery__parrafo{
+        font-size: 15px;
+        width: 80%;
+        text-align: justify;
+    }
+
+    .contact-us {
+        display: none;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        
+    }
+
+    .menu__tipos{
+        text-align: center;
+    }
+
+
+    .bebidas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        margin: auto;
+        margin-top: 150px;
+    }
+
+    .bebidas__tipos{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        width: 250px;
+        height: 380px;
+        margin-bottom: 50px;
+    }
+
+    .bebida__subtitle {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .bebidas__items{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .bebidas__gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px 10px;
+        align-items: center;
+        margin: auto;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .bebidas__projects{
+        width: 100%;
+        height: 350px;
+        margin-bottom: 50px;
+    }
+    
+    .bebida__img {
+        width: 350px;
+        height: 350px;
+    }
+    .form {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .nav__title{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .nav--links{
+        font-size: 10px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr); 
+        margin: auto;
+        margin-top: 150px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: none;
+        
+    .gallery__text {
+        align-items: center;
+        .gallery__subtitle {
+            font-size: 15px;
+        }
+    
+        .gallery__parrafo{
+            font-size: 15px;
+            width: 80%;
+            text-align: justify;
+        }
+    }
+
+    }
+
+    .contact-us {
+        display: none;
+    }
+
+    .menu__imgs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: none;
+        gap: 0px 10px;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .bebidas__gallery{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bebida__img {
+        width: 350px;
+        height: 300px;
+    }
+    .bebidas__projects{
+        width: 350px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 450px){
+    .nav__title{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .nos__parrafo{
+        font-size: 10px;
+    }
+    
+    .gallery__text {
+        align-items: center;
+    }
+
+    .gallery__subtitle {
+        font-size: 15px;
+        text-align: center;
+    }
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr); 
+    margin: auto;
+    margin-top: 150px;
+    }
+
+
+
+    .copyright {
+        font-size: 10px;
+    }
+    }
+
+

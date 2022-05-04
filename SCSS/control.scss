@@ -1,6 +1,14 @@
 $one: #dfdfdf;
 $two: #e9e9e9;
 
+$mapa:(
+    facebook: #3a5795,
+    twitter: #55acee,
+    instagram: rgb(143, 52, 143),
+    whatsapp: #00bb2d
+);
+
+
 * {
     margin: 0;
     padding: 0;
@@ -74,6 +82,26 @@ body {
             text-align: center;
         }
 }
+    .card{
+        background-color: $two;
+        box-shadow: 1px 1px 10px #000;
+
+    .cardBodyh2{
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    .card-body p {
+        font-size: 18px;
+        text-align: justify;
+        text-align-last: center;
+        line-height: 40px;
+    }
+}
+
+
 
 
 /*Menu de alimentos*/
@@ -518,6 +546,12 @@ body {
 
 #nosotros h1 {
     font-size: 25px;
+}
+
+@each $redes, $color in $mapa {
+    .boton-#{$redes}:hover {
+        color: $color;
+    }
 }
 
 @media (max-width: 850px){
